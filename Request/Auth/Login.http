@@ -1,0 +1,10 @@
+# Choose enviroment on the bottom, if no enviroment, default to "$shared" in settings.json
+# @host = http://localhost:5049 
+POST {{host}}/auth/login
+Content-Type: application/json
+
+{
+  "username" : "jdl",
+  "password": "asdasd....12edqed",
+  "is_valid" : "True"
+} 
