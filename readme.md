@@ -49,51 +49,51 @@
 10. [Video 10][Y10] | Event Storming YouTube Video
     + [Event Storming YouTube Video][Y10p]
 
-[100]:Docs\v\Video1-0.md
-[110]:Docs\v\Video1-1-setup.md#intial-creation
-[111]:Docs\v\Video1-1-setup.md#add-all-created-projects-in-solution
-[112]:Docs\v\Video1-1-setup.md#add-project-refernce
-[113]:Docs\v\Video1-1-setup.md#add-package
-[120]:Docs\v\Video1-2-Setting-Up-Login.md#setting-up-login
-[121]:Docs\v\Video1-2-Setting-Up-Login.md#setup-dependency-injection-per-project
-[122]:Docs\v\Video1-2-Setting-Up-Login.md#code-flow
+[100]:Docs/v/Video1-0.md
+[110]:Docs/v/Video1-1-setup.md#intial-creation
+[111]:Docs/v/Video1-1-setup.md#add-all-created-projects-in-solution
+[112]:Docs/v/Video1-1-setup.md#add-project-refernce
+[113]:Docs/v/Video1-1-setup.md#add-package
+[120]:Docs/v/Video1-2-Setting-Up-Login.md#setting-up-login
+[121]:Docs/v/Video1-2-Setting-Up-Login.md#setup-dependency-injection-per-project
+[122]:Docs/v/Video1-2-Setting-Up-Login.md#code-flow
 
-[2]:Docs\v\Video2-JWT.md#jwt
-[21]:Docs\v\Video2-JWT.md#creating-model-for-appsettings-section
-[22]:Docs\v\Video2-JWT.md#user-secret
+[2]:Docs/v/Video2-JWT.md#jwt
+[21]:Docs/v/Video2-JWT.md#creating-model-for-appsettings-section
+[22]:Docs/v/Video2-JWT.md#user-secret
 
-[3]:Docs\v\Video3.md
-[31]:Docs\v\Video3-v2.md
+[3]:Docs/v/Video3.md
+[31]:Docs/v/Video3-v2.md
 
-[4]:Docs\v\Video4.md#error-handling
-[41]:Docs\v\Video4.md#via-middelware
-[42]:Docs\v\Video4.md#via-exception-filter-attribute
-[43]:Docs\v\Video4.md#using-problemdetails
-[44]:Docs\v\Video4.md#via-error-endpoint
-[45]:Docs\v\Video4.md#error-handling-flow
+[4]:Docs/v/Video4.md#error-handling
+[41]:Docs/v/Video4.md#via-middelware
+[42]:Docs/v/Video4.md#via-exception-filter-attribute
+[43]:Docs/v/Video4.md#using-problemdetails
+[44]:Docs/v/Video4.md#via-error-endpoint
+[45]:Docs/v/Video4.md#error-handling-flow
 
-[5]:Docs\v\Video5-0.md
-[51]:Docs\v\Video5-1-Via-Exception.md
-[52]:Docs\v\Video5-2-OneOf.md
-[53]:Docs\v\Video5-3-FluentResults.md
-[54]:Docs\v\Video5-4-ErrorOr.md
+[5]:Docs/v/Video5-0.md
+[51]:Docs/v/Video5-1-Via-Exception.md
+[52]:Docs/v/Video5-2-OneOf.md
+[53]:Docs/v/Video5-3-FluentResults.md
+[54]:Docs/v/Video5-4-ErrorOr.md
 
-[6]:Docs\v\Video6-CQRS.md#cqrs
-[61]:Docs\v\Video6-CQRS.md#mediatr
+[6]:Docs/v/Video6-CQRS.md#cqrs
+[61]:Docs/v/Video6-CQRS.md#mediatr
 
-[7]:Docs\v\Video7-1-Mapster.md
-[71]:Docs\v\Video7-2-MapsterInCode.md
+[7]:Docs/v/Video7-1-Mapster.md
+[71]:Docs/v/Video7-2-MapsterInCode.md
 
-[8]:Docs\v\Video8-ModelValidation.md#model-validation
-[81]:Docs\v\Video8-ModelValidation.md#add-fluent-validation
-[82]:Docs\v\Video8-ModelValidation.md#convert-to-a-generic-validator
-[83]:Docs\v\Video8-ModelValidation.md#fix-title-of-error-response
-[84]:Docs\v\Video8-ModelValidation.md#base-controller-clean-up
-[85]:Docs\v\Video8-ModelValidation.md#using-the-generic-validator
+[8]:Docs/v/Video8-ModelValidation.md#model-validation
+[81]:Docs/v/Video8-ModelValidation.md#add-fluent-validation
+[82]:Docs/v/Video8-ModelValidation.md#convert-to-a-generic-validator
+[83]:Docs/v/Video8-ModelValidation.md#fix-title-of-error-response
+[84]:Docs/v/Video8-ModelValidation.md#base-controller-clean-up
+[85]:Docs/v/Video8-ModelValidation.md#using-the-generic-validator
 
-[9]:Docs\v\Video9.md#bearer-authentication
-[91]:Docs\v\Video9.md#adding-authorization
-[92]:Docs\v\Video9.md#adding-authorization-global---to-inheriting-classes
+[9]:Docs/v/Video9.md#bearer-authentication
+[91]:Docs/v/Video9.md#adding-authorization
+[92]:Docs/v/Video9.md#adding-authorization-global---to-inheriting-classes
 
 
 [YP]:https://www.youtube.com/playlist?list=PLzYkqgWkHPKBcDIP5gzLfASkQyTdy0t4k
