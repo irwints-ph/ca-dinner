@@ -47,7 +47,28 @@
     + [Seeting Authorization Globally][92]
 
 10. [Video 10][Y10] | Event Storming YouTube Video
-    + [Event Storming YouTube Video][Y10p]
+    + [Event Storming YouTube Video][Y10p]. We will use draw.io instead
+
+11. [Watch this First][Y11p] | [Video 11][Y11] | Mapping Software Logic Using Process Modeling YouTube Video | [Output][V11]
+```
+    To recap:
+    1. Identify Entities and treat each entity as an aggregate root
+    2. Identify relationships between the entities
+    3. Merge aggregates if there are constraints
+
+    Possible constraints:
+    1. Enforcing Invariants
+    2. Eventual consistency cannot be tolerated
+
+    Good indicators that an entity should be an aggregate root:
+    1. It is referenced by other aggregates
+    2. It will be looked up by Id
+```
+12. [Video 12][Y12] | [Implementing AggregateRoot Entity ValueObject][V12] 
+
+13. [Video 13][Y13] | [Domain Layer Structure & Skeleton  Clean Architecture][V13] 
+14. [Video 14][Y14] | [REST + DDD + CA + CQRS  When it all plays together][V14] 
+14. [Video 15][Y15] | [EF Core DDD and Clean Architecture  Mapping Aggregates to Relational Databases][V15] 
 
 [100]:Docs/v/Video1-0.md
 [110]:Docs/v/Video1-1-setup.md#intial-creation
@@ -95,6 +116,13 @@
 [91]:Docs/v/Video9.md#adding-authorization
 [92]:Docs/v/Video9.md#adding-authorization-global---to-inheriting-classes
 
+[V11]:Docs/Api/DomainModels/Aggregates.Menu.md
+[V12]:Docs/v/Video12.md#implementing-aggregateroot-entity-valueobject
+[V13]:Docs/v/Video13.md#domain-layer-structure--skeleton--clean-architecture
+[V14]:Docs/v/Video14.md#rest--ddd--ca--cqrs--when-it-all-plays-together
+[V15]:Docs/v/Video15.md#ef-core-ddd-and-clean-architecture--mapping-aggregates-to-relational-databases
+
+
 
 [YP]:https://www.youtube.com/playlist?list=PLzYkqgWkHPKBcDIP5gzLfASkQyTdy0t4k
 [Y1]:https://www.youtube.com/watch?v=fhM0V2N1GpY
@@ -109,8 +137,10 @@
 [Y9]:https://www.youtube.com/watch?v=7ILCRfPmQxQ
 [Y10p]:https://www.youtube.com/watch?v=7LFxWgfJEeI
 [Y10]:https://www.youtube.com/watch?v=1pBGc7kKOAA
+[Y11p]:https://www.youtube.com/watch?v=UEtmOW8uZZY
+[Y11]:https://www.youtube.com/watch?v=f6G46rqkePc
 
-```bash
-dotnet build Apps
-dotnet run --project Apps\01-Apps.Api
-```
+[Y12]:https://www.youtube.com/watch?v=weGLBPky43U
+[Y13]:https://www.youtube.com/watch?v=jnutb5Z4wyg
+[Y14]:https://www.youtube.com/watch?v=jm0CWlb5vvQ
+[Y15]:https://www.youtube.com/watch?v=5_un3PUER8U

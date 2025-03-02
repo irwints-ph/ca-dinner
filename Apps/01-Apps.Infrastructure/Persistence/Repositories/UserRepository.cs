@@ -1,8 +1,7 @@
-
 using Apps.Application.Common.Interfaces.Persistence;
 using Apps.Domain.Entities;
 
-namespace Apps.Infrastructure.Persistence;
+namespace Apps.Infrastructure.Persistence.Repositories;
 public class UserRepository: IUserRepository
 {
     //Temporary storage: In-Memory
