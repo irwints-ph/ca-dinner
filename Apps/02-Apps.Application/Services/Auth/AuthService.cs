@@ -1,0 +1,80 @@
+using Apps.Application.Common.Interfaces.Auth;
+using Apps.Application.Common.Interfaces.Persistence;
+using Apps.Domain.Entities;
+namespace Apps.Application.Services.Auth;
+
+public class AuthService(
+    IJwtTokenGenerator jwtToken,
+    IUserRepository userRepository) : IAuthService
+{
+  private readonly IJwtTokenGenerator _jwtToken = jwtToken;
+  private readonly IUserRepository _userRepository = userRepository;
+  public AuthResult Login(string Username, string Password)
+  {
+    if(_userRepository.GetUser(Username) is not User loginData)
+    {
+      throw new Exception("User not found");
+    }
+    if(loginData.Password != Password)
+    {
+      throw new Exception("User incorect");
+    }
+    var token = _jwtToken.GenerateToken(
+      loginData.Id,
+      loginData.FirstName,
+      loginData.LastName
+    );
+
+    return new AuthResult(
+        loginData.Id,
+        loginData.Username,
+        loginData.FirstName,
+        loginData.LastName,
+        loginData.Email,
+        token
+    );
+  } //End Method Login
+
+  public AuthResult Register(
+      string Username,
+      string Password,
+      string FirstName,
+      string LastName,
+      string Email)
+  {
+
+    // Check if user already exist
+    var authResult = _userRepository.GetByEmail(Email);
+    if(authResult is not null){
+      throw new Exception ("User with the given email already exists");
+    }
+    // Create User
+    var userData = new User
+    {
+      Username = Username,
+      FirstName = FirstName,
+      LastName = LastName,
+      Email = Email,
+      Password = Password
+    };
+
+    //Persist Data / Save to DB
+    _userRepository.Add(userData);
+
+    // Create JWT Token
+    var token = _jwtToken.GenerateToken(
+      userData.Id,
+      FirstName,
+      LastName
+    );
+
+    return new AuthResult(
+      userData.Id,
+      userData.Username,
+      userData.FirstName,
+      userData.LastName,
+      userData.Email,
+      token
+    );
+  } //End Method Register
+}
