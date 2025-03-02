@@ -48,27 +48,30 @@ dotnet add .\01-Apps.Api reference .\01-Apps.Infrastructure\
 ```
 
 ## Run
+
 ```bash
 dotnet run --project 01-Apps.Api
-dotnet watch run --project 01-Apps.Api
 ```
+
 ## Test API
-[Weather Forcast Test](../Apps/01-Apps.Api/Apps.Api.http)
+1. Create [Settings.Json][3] to place test variables
+1. Test [Weather Forcast Test][2]
 
 ## Add Package
+
 ```bash
 dotnet add .\02-Apps.Application package Microsoft.Extensions.DependencyInjection.Abstractions
 ```
 
-[Edit launchSettings.json](../Apps/01-Apps.Api/Properties/launchSettings.json)
+[Edit launchSettings.json][4]
 ```
 "launchBrowser": false
 ```
 
 delete Apps/01-Apps.Api/Properties/launchSettings.json
-[Modify Apps.Api.csproj](../Apps/01-Apps.Api/Apps.Api.csproj) Remove Swashbuckle.AspNetCore and Microsoft.AspNetCore.OpenApi
+[Modify Apps.Api.csproj][5] Remove Swashbuckle.AspNetCore and Microsoft.AspNetCore.OpenApi
 
-[Modify Program.cs](../Apps/01-Apps.Api/Program.cs)
+Modify [Program.cs][30]
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
 {
@@ -80,7 +83,6 @@ var app = builder.Build();
   // app.UseHttpsRedirection();
   app.MapControllers();
   app.Run();
-
 }
 ```
 > Modify all csproj file to have ItemGroup under PropertyGroup
@@ -89,3 +91,8 @@ var app = builder.Build();
 
 [0]:#intial-creation
 [1]:../../readme.md
+[2]:../Request/WeatherForcast.http
+[3]:../../.vscode/settings.json
+[4]:../../Apps/01-Apps.Api/Properties/launchSettings.json
+[5]:../../Apps/01-Apps.Api/Apps.Api.csproj
+[30]:../../Apps/01-Apps.Api/Program.cs
