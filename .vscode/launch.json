@@ -1,0 +1,14 @@
+{
+    "configurations": [
+      {
+        "type": "coreclr",
+        "request": "launch",
+        "name": "Launch Apps.Api",
+        "program": "${workspaceFolder}/Apps/01-Apps.Api/bin/Debug/net8.0/Apps.Api.dll",
+        "args": [],
+        "cwd": "${workspaceFolder}/Apps/01-Apps.Api",
+        "stopAtEntry": false,
+        "preLaunchTask": "build"
+      }
+    ]
+  }
