@@ -87,6 +87,8 @@ var app = builder.Build();
 ```
 > Modify all csproj file to have ItemGroup under PropertyGroup
 
+[Launch][6] and [Task][7] setting are created for latter debugging exercise
+
 [Top][0] | [Back to main][1]
 
 [0]:#intial-creation
@@ -96,3 +98,5 @@ var app = builder.Build();
 [4]:../../Apps/01-Apps.Api/Properties/launchSettings.json
 [5]:../../Apps/01-Apps.Api/Apps.Api.csproj
 [30]:../../Apps/01-Apps.Api/Program.cs
+[6]:../../.vscode/launch.json
+[7]:../../.vscode/tasks.json
