@@ -2,9 +2,9 @@ using Apps.Domain.Common.Models;
 
 namespace Apps.Domain.MenuAggregate.ValueObjects;
 
-public sealed class MenuSectionId : ValueObject
+public sealed class MenuSectionId : AggregateRootId<Guid>
 {
-  public Guid Value { get; private set; }
+  public override Guid Value { get; protected set; }
   private MenuSectionId(Guid value)
   {
     Value = value;

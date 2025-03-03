@@ -2,19 +2,15 @@ using Apps.Domain.Common.Models;
 
 namespace Apps.Domain.Host.ValueObjects;
 
-public sealed class Rating : ValueObject
+public sealed class Rating : AggregateRootId<int>
 {
-  public int Value { get; }
+  public override int Value { get; protected set; }
   private Rating(int value)
   {
     Value = value;
   }
-  // public static Rating CreateUniqe()
-  // {
-  //   return new (Guid.NewGuid());
-  // }
   public override IEnumerable<object> GetEqualityComponents()
   {
-      yield return Value;
+    yield return Value;
   }
 }

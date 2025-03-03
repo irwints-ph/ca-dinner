@@ -1,6 +1,7 @@
 # [Domain Driven Design][YP]
 
 ### Contents
+0. [YouTube Play List][YP] | [Summarry][V0]
 1. [Video 1][Y1] | [DDD][100]
     + [Initial Create][110]
         + [Add All Projects to soultion][111]
@@ -68,7 +69,8 @@
 
 13. [Video 13][Y13] | [Domain Layer Structure & Skeleton  Clean Architecture][V13] 
 14. [Video 14][Y14] | [REST + DDD + CA + CQRS  When it all plays together][V14] 
-14. [Video 15][Y15] | [EF Core DDD and Clean Architecture  Mapping Aggregates to Relational Databases][V15] 
+15. [Video 15][Y15] | [EF Core DDD and Clean Architecture  Mapping Aggregates to Relational Databases][V15]
+16. [Video 16][Y16] | [The Identity Paradox  DDD EF Core & Strongly Typed IDs][V16]
 
 [100]:Docs/v/Video1-0.md
 [110]:Docs/v/Video1-1-setup.md#intial-creation
@@ -121,8 +123,9 @@
 [V13]:Docs/v/Video13.md#domain-layer-structure--skeleton--clean-architecture
 [V14]:Docs/v/Video14.md#rest--ddd--ca--cqrs--when-it-all-plays-together
 [V15]:Docs/v/Video15.md#ef-core-ddd-and-clean-architecture--mapping-aggregates-to-relational-databases
+[V16]:Docs/v/Video16.md#the-identity-paradox--ddd-ef-core--strongly-typed-ids
 
-
+[V0]:Docs/v/_Summary.md#domain-driven-design---codes-summary
 
 [YP]:https://www.youtube.com/playlist?list=PLzYkqgWkHPKBcDIP5gzLfASkQyTdy0t4k
 [Y1]:https://www.youtube.com/watch?v=fhM0V2N1GpY
@@ -144,3 +147,4 @@
 [Y13]:https://www.youtube.com/watch?v=jnutb5Z4wyg
 [Y14]:https://www.youtube.com/watch?v=jm0CWlb5vvQ
 [Y15]:https://www.youtube.com/watch?v=5_un3PUER8U
+[Y16]:https://www.youtube.com/watch?v=B3Iq346KwUQ
